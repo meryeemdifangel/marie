@@ -1,0 +1,11 @@
+.Cursor {
+    z-index: 100;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 6px solid rgb(187, 220, 231);
+    pointer-events: none;
+    overflow: hidden; 
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+ }

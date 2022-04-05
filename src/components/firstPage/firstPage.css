@@ -1,0 +1,218 @@
+.firstPageContainer{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0.25turn, #daeef7, #fbfcf0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstPageContainerHero{
+position: relative;
+height: 60%;
+width: 75%;
+display: flex;
+justify-content: space-between;
+}
+.imgContainer{
+    position: absolute;
+    margin: 10px;
+    height: 100%;
+    width: 45%;
+    position: relative;
+
+    border-radius: 5px;
+    animation-name: imagee;
+    animation-duration: 2s;
+    top: 0;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+
+}
+@keyframes imagee {
+    0%{
+top: 0%;
+right: 5%;
+    }
+
+    50%{
+        top: 30%;
+        right: 3%;
+            }
+            100%{
+                top: 0%;
+                right: 0;
+                    }
+}
+.imgContainer:hover{
+    padding-top: 10px;
+    padding-right: 10px;
+    border-top: 2px solid lightblue ;
+    border-right: 2px solid lightblue ;
+
+    transform: translate(10px, 10px);
+
+}
+.styleImage{
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+    object-fit: cover;
+}
+
+.textContainer{
+    position: absolute;
+    width: 45%;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    animation-name: eh;
+animation-duration: 2s;
+top: 0;
+animation-fill-mode: forwards;
+animation-iteration-count: 2;
+}
+@keyframes eh {
+    0%{
+top: 0;
+    }
+    50%{
+top: 40%;
+    }
+    100%{
+        top: 0%;
+            }
+}
+.firstPageTitle{
+    position: absolute;
+text-transform: uppercase;
+font-size: 1.8rem;
+font-weight: 400;
+animation-name: t;
+animation-duration: 2s;
+top: 0;
+animation-fill-mode: forwards;
+animation-iteration-count: 2;
+
+background: -webkit-linear-gradient(0deg,  #48abe0 50% ,#db9d5a 100%  );
+-webkit-background-clip: text;-webkit-text-fill-color: transparent;
+}
+@keyframes t {
+    0%{
+top: 0;
+
+    }
+    50%{
+top: 8%;
+color: rgb(100, 176, 201);
+
+    }
+    100%{
+        top: 0%;
+
+            }
+}
+
+.firstPageTitle:hover{
+  cursor: pointer;
+  color: rgb(100, 176, 201);
+  border-bottom: 2px solid rgb(100, 176, 201);
+
+ 
+ margin-left: 20px;
+
+
+    }
+.firstPageText{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+font-weight: 700;
+animation-name: tt;
+animation-duration: 2s;
+top: 60%;
+animation-fill-mode: forwards;
+animation-iteration-count: 2;
+
+    }
+    @keyframes tt {
+        0%{
+    top: 60%;
+    color: rgb(56, 84, 94);
+
+        }
+     
+        100%{
+    top: 10%;
+        }
+    }
+    .firstPageText:hover{
+        cursor: pointer;
+  color: rgb(56, 84, 94);
+        }
+    .rectangleStyle{
+        height: 100px;
+        width: 280px;
+position: absolute;
+border: solid 8px orange;
+right: -50px;
+bottom: -20px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: 	#0080ff;
+font-weight: 700;
+font-size: 2.2rem;
+letter-spacing: 2px;
+
+transform: rotate(-90deg);
+
+
+    }
+    .rectangleStyle:hover{
+     background-color: rgba(34, 147, 132, 0.2);
+
+
+
+    }
+    .vertical{
+    }
+
+    @media only screen and (max-width: 700px) {
+        .firstPageContainer{
+            height: 120vh;
+            width: 100%;
+            background: linear-gradient(0.25turn, #daeef7, #fbfcf0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .firstPageContainerHero{
+
+            height: 80%;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            }
+            .textContainer{
+                width: 80%;
+                margin-left: 20px;
+            }
+            .imgContainer{
+                height: 60%;
+                width: 80%;
+                position: relative;
+            }
+            .imgContainer:hover{
+                border-top: 2px solid lightblue ;
+                border-right: 2px solid lightblue ;
+            
+                transform: translate(10px, 10px);
+            
+            }
+      }
+      
