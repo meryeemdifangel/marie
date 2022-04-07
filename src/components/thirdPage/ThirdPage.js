@@ -16,17 +16,17 @@ function ThirdPage() {
         <div className='thirdPageContainerTop'>
             <div className='highLow'>
             <div className='high'>
-                <div style={{fontWeight: '500' ,fontSize: '1.4rem'  }} data-aos="fade-down">
+                <div data-aos="fade-down" className='colorText' >
                 OUR GLOBAL 
                 </div>
-                <div data-aos="fade-up" style={{fontWeight: '700' ,fontSize: '1.4rem' }}>
+                <div data-aos="fade-up" className='color_Text'>
                  LOCATIONS
                 </div>
 
 </div>
 <div className='low'>
 <div className='lowH'>
-    <div className='un' data-aos="fade-up">
+    <div className='trois' data-aos="fade-up">
 <div  className='pays'  >UNITED STATES</div>
 <div className='paysDecrire'>2055 Limestone Road #200 C Wilmington, Delaware 19808 United States</div>
     </div>
@@ -38,7 +38,7 @@ Saket City, New Delhi 110017
 India
 </div>
     </div>
-    <div className='un' data-aos="fade-up">
+    <div className='deux' data-aos="fade-up">
     <div  className='pays' >PHILIPPINES</div>
 <div className='paysDecrire'  >Level 10-1 One Global Place
 25th St, 5th Ave, Taguig 1634
@@ -48,7 +48,7 @@ Philippines
 </div>
 <div className='lowL'>
 <div className='lowL1'>
-    <div className='lowL11' data-aos="fade-down-right">
+    <div className='lowL11' data-aos="fade-right">
     Insights, expertise, and big
 ideas delivered to your inbox
     </div>

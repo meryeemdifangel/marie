@@ -2,7 +2,6 @@
     height: 120vh;
 padding-top: 40px;
     width: 100%;
-    background: linear-gradient(0.25turn, #daeef7, #fbfcf0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +31,7 @@ justify-content: space-between;
 .secondPageContainerHeroRight{
     width: 40%;
     margin-right: 40px;
-    background: linear-gradient(0.25turn, #c8e7f5, #eaebdd);
+    background: linear-gradient(0.25turn, #acd5e8, #eaebdd);
 
 }
 .secondPageContainerHeroLeftHight{
@@ -43,15 +42,19 @@ justify-content: space-between;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.7rem;
-animation-name: title;
-animation-duration: 2s;
-top: 0;
-animation-fill-mode: forwards;
-animation-iteration-count: 2;
+
 position: absolute;
 top: 0;
-background: -webkit-linear-gradient(0deg,  #48abe0 50% ,#db9d5a 100%  );
--webkit-background-clip: text;-webkit-text-fill-color: transparent;
+position: absolute;
+text-transform: uppercase;
+font-size: 1.2rem;
+font-weight: 400;
+
+top: 0;
+
+color: rgb(121, 119, 119);
+letter-spacing: 1px;
+margin-bottom: 10px;
 }
 @keyframes title {
     0%{
@@ -90,29 +93,24 @@ color: rgb(100, 176, 201);
 
             }
 }
-.topTitle:hover{
-    width: 50%;
-    cursor: pointer;
-  color: rgb(100, 176, 201);
-  border-bottom: 2px solid rgb(100, 176, 201);
 
-  animation-name: stretch;
-  animation-duration: 1.5s; 
-  animation-timing-function: ease-out; 
- margin-left: 20px;
-}
 .topText{
     position: absolute;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.7rem;
-    top: 50%;
-    animation-name: text;
-    animation-duration: 2s;    
-    animation-fill-mode: forwards;
-    animation-iteration-count: 2;
-    background: -webkit-linear-gradient(0deg,  #48abe0 50% ,#db9d5a 100%  );
--webkit-background-clip: text;-webkit-text-fill-color: transparent;
+    top: 30%;
+    letter-spacing: 1px;
+    
+    
+    display: inline-block;
+    background: linear-gradient(
+      90deg,
+      rgba(54, 128, 247, 1) 0%,
+      rgba(240, 173, 71, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
     @keyframes text {
         0%{
@@ -166,17 +164,20 @@ color: rgb(100, 176, 201);
 .emailStyle{
     text-decoration: underline;
     font-weight: 600;
-    font-size: 1.3rem;
+    
+
+font-size: 1.4rem;
+    text-transform: uppercase;
+    color: rgb(121, 119, 119);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 
 }
-.emailStyle:hover{
-    width: 50%;
-    margin-left: 20px;
-    text-decoration: none;
-color: rgb(134, 191, 210);
-border-bottom: 2px dotted rgb(134, 191, 210);
-
+.texto{
+    color: rgb(121, 119, 119);
+font-size: 1.1rem;
 }
+
 .secondPageContainerHeroLeftBottom{
    height: 20%;
    display: flex;
@@ -186,7 +187,7 @@ border-bottom: 2px dotted rgb(134, 191, 210);
   
 }
 .one{
-    background: linear-gradient(0.25turn,  #fbfcf0  ,  #c8eafa);
+    background: linear-gradient(0.25turn,  #f3f4e3  ,  #aed7ea);
     height: 100%;
     width: 40%;
     margin-right: 7px;
@@ -194,12 +195,19 @@ border-bottom: 2px dotted rgb(134, 191, 210);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+  
 }
 .one:hover{
-   padding: 10px;
-}
+
+   
+  
+    
+      }
+
+
 .two{
-    background-color: #c8eafa;
+    background-color: #aed7ea;
     height: 100%;
     width: 30%;
     margin-right: 7px;
@@ -207,21 +215,36 @@ border-bottom: 2px dotted rgb(134, 191, 210);
     flex-direction:column ;
     align-items: center;
     justify-content: center;
+   
+
 }
 .two:hover{
-    padding: 10px;
+
  }
+@keyframes two {
+    from{
+opacity: 0;
+transform: translateY(-100px);
+
+    }
+    to{
+opacity: 1;
+transform: translateY(0px);
+
+    }
+}
+
 .three{
     height: 100%;
     width: 30%;
-    background-color: #c8eafa;
+    background-color: #aed7ea;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .three:hover{
-    padding: 10px;
+   
  }
 .icon{
     height: 100%;
@@ -255,6 +278,15 @@ background-color: red;
     border-bottom: 1px solid grey;
     background-color: transparent;
     padding: 10px 0 10px 0;
+}
+select:focus{
+    outline: none;
+}
+option{
+    background-color: transparent;
+}
+.i:focus{
+    outline: none;
 }
 .i::placeholder{
     color: black;
@@ -293,12 +325,15 @@ select{
     background-color: transparent;
    
 }
+.inputs:focus{
+    outline: none;
+}
 .inputs::placeholder{
     color: gray;
     font-weight: 400;
 }
 .rights{
-    font-size: 0.5rem;
+    font-size: 0.65rem;
     font-weight: 600;
     width: 90%;
 }
@@ -336,10 +371,21 @@ span{
     .secondPageContainer{
         height: 200vh;
         width: 100%;
-        background: linear-gradient(0.25turn, #daeef7, #fbfcf0);
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .emailStyle{
+        text-decoration: underline;
+        font-weight: 600;
+        
+    
+    font-size: 1rem;
+        text-transform: uppercase;
+        color: rgb(121, 119, 119);
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    
     }
     .secondPageContainerHero{
 
@@ -398,10 +444,25 @@ span{
     .secondPageContainer{
         height: 200vh;
         width: 100%;
-        background: linear-gradient(0.25turn, #daeef7, #fbfcf0);
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .secondPageContainerHeroLeftHight{
+        height: 20%;
+        margin-bottom: 20px;
+    }
+    .emailStyle{
+        text-decoration: underline;
+        font-weight: 600;
+        
+    
+    font-size: 1rem;
+        text-transform: uppercase;
+        color: rgb(121, 119, 119);
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    
     }
     .secondPageContainerHero{
 
@@ -466,10 +527,21 @@ span{
         padding-top: 40px;
         height: 180vh;
         width: 100%;
-        background: linear-gradient(0.25turn, #daeef7, #fbfcf0);
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .emailStyle{
+        text-decoration: underline;
+        font-weight: 600;
+        
+    
+    font-size: 1rem;
+        text-transform: uppercase;
+        color: rgb(121, 119, 119);
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    
     }
     .secondPageContainerHero{
 
@@ -524,6 +596,7 @@ span{
         }
         .secondPageContainerHeroLeftHight{
             height: 20%;
+            margin-bottom: 20px;
         }
         .secondPageContainerHeroLeftMiddle{
             height: 40%;

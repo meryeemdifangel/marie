@@ -10,6 +10,13 @@ cursor: none;
   
 }
 
+.containerAllComponents{
+  height: 320vh;
+  width: 100%;
+  background: url("./assets/bg.png");
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -21,24 +21,24 @@ Aos.init({duration:1000})
           </div>
           <div className='secondPageContainerHeroLeftMiddle'>
             <div>
-              <div className='emailStyle'>
+              <div className='emailStyle' data-aos="fade-right">
                 Emails
               </div>
               <div>
-                <div>info@laquest.net</div>
-                <div>info@laquest.net</div>
-                <div>info@laquest.net</div>
+                <div className='texto' >info@laquest.net</div>
+                <div className='texto'>info@laquest.net</div>
+                <div className='texto'>info@laquest.net</div>
 
               </div>
             </div>
             <div>
-              <div className='emailStyle'>
+              <div className='emailStyle' data-aos="fade-right">
                 Phones
               </div>
               <div>
-                <div>+1(718)521-2958 (United States)</div>
-                <div>+1(718)521-2958 (India)</div>
-                <div>+1(718)521-2958 (Philippine)</div>
+                <div className='texto'>+1(718)521-2958 (United States)</div>
+                <div className='texto'>+1(718)521-2958 (India)</div>
+                <div className='texto' >+1(718)521-2958 (Philippine)</div>
 
               </div>
             </div>
@@ -47,7 +47,7 @@ Aos.init({duration:1000})
           </div>
          
           <div className='secondPageContainerHeroLeftBottom'>
-            <div className='one' data-aos="fade-up">
+            <div data-aos="fade-up" className='one' >
 <EventAvailableIcon style={{ fontSize: 40 }} />
 <div className='icone'>Book a consultation</div>
             </div>
